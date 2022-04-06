@@ -5,14 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
+    <style>
+        *{
+            background-color: #65C18C;
+        }
+        #winner{
+            display: inline;
+            font-size: 30px;
+            text-align: center;
+            color: whitesmoke;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container{
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .container>div{
+            margin: auto;
+        }
+        #roll{
+            background-color: #FF6B6B;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 40px;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+        img{
+            margin: auto;
+            width: 100%;
+            height: auto;
+        }
+        h2{
+            text-align: center;
+            margin: 10px;
+            color: whitesmoke;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+    </style>
 </head>
 <body>
-    <div id="winner"></div>
+    <center><div id="winner">This is the sample text</div></center>
     <div class="container">
-        <div id="member-1"></div>
-        <div id="member-2"></div>
-        <div id="member-3"></div>
-        <button id="roll">ROLL THE DICE</button>
+        <div id="member-1">
+            <h2>Member A</h2>
+            <img>
+        </div>
+        <div id="member-2">
+            <h2>Member B</h2>
+            <img>
+        </div>
+        <div id="member-3">
+            <h2>Member C</h2>
+            <img>
+        </div>
     </div>
+    <center><button id="roll">ROLL THE DICE</button></center>
 </body>
 </html>
