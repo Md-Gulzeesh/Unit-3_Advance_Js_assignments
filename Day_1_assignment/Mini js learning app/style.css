@@ -32,3 +32,8 @@ button{
 h1,ul,li{
     background-color: #FD5D5D;
 }
+iframe,.icon{
+    border-radius: 15px;
+    background: #FD5D5D;
+    border: none;
+}

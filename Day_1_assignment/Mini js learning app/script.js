@@ -28,6 +28,7 @@ document.querySelector("#constructor-functions").addEventListener("click",show_c
 document.querySelector("#prototype").addEventListener("click",show_prototype);
 function show(){
     document.querySelector("ul").innerText = "";
+    document.querySelector(".icon").innerHTML = "";
      let data = JSON.parse(localStorage.getItem("scope"));
     for(let key in data){
         let listItem = document.createElement("li");
@@ -36,9 +37,18 @@ function show(){
         document.querySelector("h1").innerText = document.querySelectorAll("button")[0].innerText;
         document.querySelector("ul").append(listItem);
     }
+    let iframe = document.createElement("iframe");
+    iframe.setAttribute("src","https://www.youtube.com/embed/UDHROiqYI5o");
+    iframe.setAttribute("width","650");
+    iframe.setAttribute("height","395");
+    iframe.setAttribute("frameborder","none");
+    // iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    iframe.setAttribute("allowfullscreen","true");
+    document.querySelector(".icon").append(iframe);
 };
 function show_hoist(){
     document.querySelector("ul").innerText = "";
+    document.querySelector(".icon").innerHTML = "";
     let data = JSON.parse(localStorage.getItem("Hoisting"));
    for(let key in data){
        let listItem = document.createElement("li");
@@ -47,10 +57,18 @@ function show_hoist(){
        document.querySelector("h1").innerText = document.querySelectorAll("button")[1].innerText;
        document.querySelector("ul").append(listItem);
    }
+   let iframe = document.createElement("iframe");
+   iframe.setAttribute("src","https://www.youtube.com/embed/UDHROiqYI5o");
+   iframe.setAttribute("width","650");
+   iframe.setAttribute("height","395");
+   iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+   iframe.setAttribute("allowfullscreen","true");
+   document.querySelector(".icon").append(iframe);
 };
 
 function show_const_function(){
     document.querySelector("ul").innerText = "";
+    document.querySelector(".icon").innerHTML = "";
     let data = JSON.parse(localStorage.getItem("Constructor_function"));
    for(let key in data){
        let listItem = document.createElement("li");
@@ -59,9 +77,17 @@ function show_const_function(){
        document.querySelector("h1").innerText = document.querySelectorAll("button")[2].innerText;
        document.querySelector("ul").append(listItem);
    }
+   let iframe = document.createElement("iframe");
+   iframe.setAttribute("src","https://www.youtube.com/embed/UDHROiqYI5o");
+   iframe.setAttribute("width","650");
+   iframe.setAttribute("height","395");
+   iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+   iframe.setAttribute("allowfullscreen","true");
+   document.querySelector(".icon").append(iframe);
 };
 function show_prototype(){
     document.querySelector("ul").innerText = "";
+    document.querySelector(".icon").innerHTML = "";
     let data = JSON.parse(localStorage.getItem("Prototype"));
    for(let key in data){
        let listItem = document.createElement("li");
@@ -70,4 +96,11 @@ function show_prototype(){
        document.querySelector("h1").innerText = document.querySelectorAll("button")[3].innerText;
        document.querySelector("ul").append(listItem);
    }
+   let iframe = document.createElement("iframe");
+   iframe.setAttribute("src","https://www.youtube.com/embed/UDHROiqYI5o");
+   iframe.setAttribute("width","650");
+   iframe.setAttribute("height","395");
+   iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+   iframe.setAttribute("allowfullscreen","true");
+   document.querySelector(".icon").append(iframe);
 };
